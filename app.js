@@ -8,13 +8,6 @@ links.querySelectorAll('a').forEach(a =>
   a.addEventListener('click', () => links.classList.remove('open'))
 );
 
-// Navbar background on scroll
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.style.background = window.scrollY > 60
-    ? 'rgba(13,27,62,.97)'
-    : 'var(--navy)';
-});
 
 // Smooth active link highlight
 const sections = document.querySelectorAll('section[id], header[id]');
